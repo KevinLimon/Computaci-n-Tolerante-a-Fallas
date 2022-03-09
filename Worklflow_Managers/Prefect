@@ -1,0 +1,43 @@
+from prefect import *
+import datetime
+import csv
+from prefect.schedules import IntervalSchedule
+
+@task(max_retries=5, retry_delay= datetime.timedelta(seconds=5))
+def extract(path):
+    with open(path, "r") as flow:
+        text = flow.readline().strip()
+    data = [int (i) for i in text.split(",")]
+    print(data)
+    return data
+
+@task
+def transform(data):
+    tdata = [i + 1 for i in data]
+    return tdata
+
+@task
+def load(data, path):
+    with open(path, "w") as flow:
+        csv_writer = csv.writer(flow)
+        csv_writer.writerow(data)
+    return
+
+def build_flow(schedule=None):
+    with Flow('ETL', schedule=schedule) as flow:
+        path = Parameter(name = 'path', required=True)
+        data = extract(path)
+        tdata = transform(data)
+        load(tdata, path)
+    return flow
+
+schedule = IntervalSchedule(
+    start_date = datetime.datetime.now() + datetime.timedelta(seconds = 1),
+    interval = datetime.timedelta(seconds = 5)
+)
+
+flow = build_flow(schedule)
+
+flow.run(parameters={
+    'path': 'datos.csv'
+})
