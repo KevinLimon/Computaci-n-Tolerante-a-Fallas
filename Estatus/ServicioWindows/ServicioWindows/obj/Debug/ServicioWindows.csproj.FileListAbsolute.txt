@@ -1,0 +1,10 @@
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\bin\Debug\ServicioWindows.exe.config
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\bin\Debug\ServicioWindows.exe
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\bin\Debug\ServicioWindows.pdb
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.csproj.AssemblyReference.cache
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.csproj.SuggestedBindingRedirects.cache
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.Archivos.resources
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.csproj.GenerateResource.cache
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.csproj.CoreCompileInputs.cache
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.exe
+C:\Users\limon\Desktop\Cursos_C#\ServicioWindows\ServicioWindows\obj\Debug\ServicioWindows.pdb
